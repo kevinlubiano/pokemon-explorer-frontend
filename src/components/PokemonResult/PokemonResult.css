@@ -1,0 +1,9 @@
+.pokemon-result {
+  padding: 40px;
+  text-align: center;
+}
+
+.pokemon-result__query {
+  color: #aaa;
+  margin-bottom: 12px;
+}

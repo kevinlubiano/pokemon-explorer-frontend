@@ -1,0 +1,16 @@
+.about {
+  padding: 40px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about__title {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.about__text {
+  color: #555;
+  line-height: 1.5;
+}

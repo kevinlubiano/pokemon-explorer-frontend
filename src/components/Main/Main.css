@@ -1,0 +1,30 @@
+.main {
+  padding: 40px;
+  min-height: 60vh;
+}
+
+.main__hero {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.main__title {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.main__subtitle {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 24px 20px;
+  }
+
+  .main__title {
+    font-size: 1.5rem;
+  }
+}
