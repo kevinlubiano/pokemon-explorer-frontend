@@ -14,6 +14,7 @@
   color: #fff;
   font-size: 1rem;
   min-width: 220px;
+  transition: border-color 0.2s ease;
 }
 
 .search-form__input:focus {
