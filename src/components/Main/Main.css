@@ -28,3 +28,18 @@
     font-size: 1.5rem;
   }
 }
+
+.main__last-search {
+  margin-top: 16px;
+  background: none;
+  border: 1px solid #444;
+  color: #ccc;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.main__last-search:hover {
+  border-color: #888;
+}

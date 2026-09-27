@@ -3,7 +3,12 @@
   text-align: center;
 }
 
-.pokemon-result__query {
+.pokemon-result__message {
   color: #aaa;
-  margin-bottom: 12px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.pokemon-result__message--error {
+  color: #e57373;
 }

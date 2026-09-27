@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import SearchForm from "../SearchForm/SearchForm.jsx";
 import "./Main.css";
 
-function Main() {
+function Main({ lastSearch }) {
   const navigate = useNavigate();
 
   function handleSearch(term) {
@@ -18,6 +18,15 @@ function Main() {
           movimientos.
         </p>
         <SearchForm onSearch={handleSearch} />
+        {lastSearch && (
+          <button
+            type="button"
+            className="main__last-search"
+            onClick={() => navigate(`/pokemon/${lastSearch.name}`)}
+          >
+            Ver tu última búsqueda: {lastSearch.name}
+          </button>
+        )}
       </section>
     </main>
   );
