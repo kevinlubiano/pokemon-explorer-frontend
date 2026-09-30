@@ -4,6 +4,13 @@
   justify-content: center;
   margin-top: 24px;
   flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.search-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .search-form__input {
@@ -20,6 +27,12 @@
 .search-form__input:focus {
   outline: none;
   border-color: #888;
+}
+
+.search-form__error {
+  color: #e57373;
+  font-size: 0.85rem;
+  text-align: left;
 }
 
 .search-form__button {

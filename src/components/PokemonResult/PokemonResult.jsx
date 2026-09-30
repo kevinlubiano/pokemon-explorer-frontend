@@ -13,15 +13,16 @@ import "./PokemonResult.css";
 
 function PokemonResult() {
   const { name } = useParams();
+
+  return <PokemonResultContent key={name} name={name} />;
+}
+
+function PokemonResultContent({ name }) {
   const [pokemon, setPokemon] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState("");
 
   useEffect(() => {
-    setIsLoading(true);
-    setError("");
-    setPokemon(null);
-
     getPokemonByName(name)
       .then((data) => {
         if (!data) {

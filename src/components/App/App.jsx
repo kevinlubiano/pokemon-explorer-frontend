@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "../Header/Header.jsx";
 import Main from "../Main/Main.jsx";
@@ -9,19 +9,18 @@ import Footer from "../Footer/Footer.jsx";
 import { LOCAL_STORAGE_KEY } from "../../utils/constants.js";
 import "./App.css";
 
-function App() {
-  const [lastSearch, setLastSearch] = useState(null);
+function getInitialLastSearch() {
+  const saved = localStorage.getItem(LOCAL_STORAGE_KEY);
+  if (!saved) return null;
+  try {
+    return JSON.parse(saved);
+  } catch {
+    return null;
+  }
+}
 
-  useEffect(() => {
-    const saved = localStorage.getItem(LOCAL_STORAGE_KEY);
-    if (saved) {
-      try {
-        setLastSearch(JSON.parse(saved));
-      } catch {
-        setLastSearch(null);
-      }
-    }
-  }, []);
+function App() {
+  const [lastSearch] = useState(getInitialLastSearch);
 
   return (
     <BrowserRouter>
