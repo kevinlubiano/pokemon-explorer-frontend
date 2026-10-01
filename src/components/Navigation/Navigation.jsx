@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Navigation.css";
 
 function Navigation() {
@@ -5,9 +6,9 @@ function Navigation() {
     <nav className="navigation">
       <ul className="navigation__list">
         <li className="navigation__item">
-          <a href="/" className="navigation__link">
+          <Link to="/" className="navigation__link">
             Inicio
-          </a>
+          </Link>
         </li>
         <li className="navigation__item">
           <a href="#about" className="navigation__link">
