@@ -1,16 +1,31 @@
-# React + Vite
+# Pokédex App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web para buscar Pokémon por nombre o número y ver sus estadísticas, tipos y movimientos, usando datos en tiempo real de la [PokeAPI](https://pokeapi.co/).
 
-Currently, two official plugins are available:
+Proyecto final de TripleTen — Aplicación de Front-End.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🔗 Demo en vivo
 
-## React Compiler
+https://endearing-eclair-96ccdc.netlify.app
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologías
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- React Router
+- PokeAPI (fetch nativo, sin librerías externas)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Funcionalidad
+
+- Búsqueda de Pokémon por nombre
+- Manejo de estados: cargando (preloader), error de conexión y "no encontrado"
+- Lista de movimientos con paginación "Mostrar más"
+- Se guarda la última búsqueda en `localStorage`
+- Diseño responsivo, con fuentes personalizadas (`@font-face`) y microanimaciones
+
+## Cómo correrlo localmente
+
+```bash
+npm install
+npm run dev
+```

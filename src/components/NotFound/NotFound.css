@@ -1,0 +1,14 @@
+.not-found {
+  padding: 80px 40px;
+  text-align: center;
+  flex: 1;
+}
+
+.not-found__title {
+  font-size: 3rem;
+  margin-bottom: 8px;
+}
+
+.not-found__link {
+  color: #4a90d9;
+}

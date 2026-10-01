@@ -1,0 +1,15 @@
+.pokemon-result {
+  padding: 40px;
+  text-align: center;
+  flex: 1;
+}
+
+.pokemon-result__message {
+  color: #aaa;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.pokemon-result__message--error {
+  color: #e57373;
+}
